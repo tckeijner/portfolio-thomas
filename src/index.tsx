@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import BioPortfolioPage from "./PortfolioPages/bioPortfolioPage";
-import CvPortfolioPage from "./PortfolioPages/cvPortfolioPage";
+import CvPortfolioPage from "./PortfolioPages/cvPortfolioPage/cvPortfolioPage";
 import ProjectsPortfolioPage from "./PortfolioPages/projectsPortfolioPage";
 
 const root = ReactDOM.createRoot(

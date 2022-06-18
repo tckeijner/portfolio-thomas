@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Achmea",
+    "subtitle": "Frontend engineer",
+    "description": "Developing and maintaining sales funnels and account management functionality on the website of the Centraal Beheer label. Improving generic functionality. Developing sales funnels for the Rabobank/Interpolis Zeker in Bedrijf branch (not public)",
+    "date": "Apr 2021 - present"
+  },
+  {
+    "title": "IU International University",
+    "subtitle": "BSc Computer Science",
+    "description": "Part time",
+    "date": "Dec 2021 - present"
+  },
+  {
+    "title": "Achmea",
+    "subtitle": "Linux engineer",
+    "description": "Administration of cloud and on-premises UNIX servers. Infrastructure automation with Chef/Ruby",
+    "date": "Mar 2021 - Mar 2021"
+  },
+  {
+    "title": "Calco",
+    "subtitle": "IT Masterclass Professional",
+    "description": "Traineeship for IT professionals. Deployment at Achmea.",
+    "date": "Jan 2020 - Oct 2021"
+  },
+  {
+    "title": "Oostvaarders College Almere",
+    "subtitle": "Music Teacher",
+    "description": "Designing and teaching music lessons to children in the ages 12-14. Contributing to the continuous improvement of digital teaching materials, using various digital tools.",
+    "date": "Sep 2012 - Dec 2019"
+  },
+  {
+    "title": "HKU University of the Arts Utrecht",
+    "subtitle": "Bachelor of Education in Music",
+    "description": "Bachelor's education focused on teaching music primary and secondary school, as well as general arts education for all ages.",
+    "date": "Sep 2008 - Jul 2012"
+  }
+]
