@@ -3,13 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import BioPortfolioPage from "./PortfolioPages/bioPortfolioPage";
+import CvPortfolioPage from "./PortfolioPages/cvPortfolioPage";
+import ProjectsPortfolioPage from "./PortfolioPages/projectsPortfolioPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App/>}>
+          <Route path="bio" element={<BioPortfolioPage/>}/>
+          <Route path="cv" element={<CvPortfolioPage/>}/>
+          <Route path="projects" element={<ProjectsPortfolioPage/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

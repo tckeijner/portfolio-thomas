@@ -1,0 +1,50 @@
+@import 'colors';
+
+body {
+  background-color: $gainsboro;
+}
+
+.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $jet;
+  display: flex;
+  justify-content: space-between;
+
+  .nameLabel {
+    display: block;
+    padding: 14px 16px;
+    color: antiquewhite;
+    align-content: center;
+  }
+
+  .portfolioLabel {
+    display: block;
+    padding: 14px 16px;
+    color: antiquewhite;
+    align-content: center;
+  }
+
+  li {
+    display: inline;
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: $alabaster;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: $eerie-black;
+  }
+}
+
+.portFolioPage {
+  padding: 13px;
+}
