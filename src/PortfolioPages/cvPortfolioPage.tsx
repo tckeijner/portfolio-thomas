@@ -1,5 +1,7 @@
 export default function CvPortfolioPage() {
   return (
-    <div>CV</div>
+    <div className="portFolioPage">
+      <h1>Curriculum Vitae</h1>
+    </div>
   )
 }

@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
-import {Link} from "react-router-dom";
+import {Outlet} from "react-router-dom";
+import NavBar from "./NavBar/navBar";
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <Link to="/bio">Bio</Link>
-        <Link to="/cv">CV</Link>
-        <Link to="/projects">Projects</Link>
-      </nav>
+      <NavBar/>
+      <Outlet/>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 export default function ProjectsPortfolioPage() {
   return (
-    <div>Projects</div>
+    <div className="portFolioPage">
+      <h1>Projects</h1>
+    </div>
   )
 }
