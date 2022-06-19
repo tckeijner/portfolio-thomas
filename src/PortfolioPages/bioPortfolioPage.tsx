@@ -1,7 +1,7 @@
 export default function BioPortfolioPage() {
   return (
     <div className="portFolioPage">
-      <h1>About me</h1>
+      <div className="portFolioPageHeader"><h1>About me</h1></div>
     </div>
   )
 }

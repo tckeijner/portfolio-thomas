@@ -1,26 +1,35 @@
+import { motion } from 'framer-motion';
 import cvItems from './cvItems.json';
-import '../../styles/timeline.scss';
+import CvPortfolioItem from "./cvPortfolioItem";
 
 export default function CvPortfolioPage() {
+  function getMotionProps(isLeft: boolean) {
+    return {
+      initial: { x: isLeft ? -100 : 100, opacity: 0 },
+      whileInView: { x: 0, opacity: 1 },
+      transition: { bounce: 0, duration: 1 }
+    }
+  }
+
   return (
     <div className="portFolioPage cvPortfolioPage">
-      <h1>Curriculum Vitae</h1>
+      <div className="portFolioPageHeader"><h1>CV</h1></div>
 
-      <div className="timeline">
-        {cvItems.map((item, index) => {
-          const className = index % 2 === 0 ? 'container left' : 'container right';
+      <div className="cvItems">
+        { cvItems.map((item, index) => {
+          const isLeft = index % 2 === 0
+          const motionProps = getMotionProps(isLeft);
           return (
-            <div className={className}>
-              <div className="date">{item.date}</div>
-              <i className="icon fa fa-home"></i>
-              <div className="content">
-                <h2>{item.title}</h2>
-                <h3>{item.subtitle}</h3>
-                <p>{item.description}</p>
-              </div>
-            </div>
+            <motion.div
+              className={ isLeft ? 'cvItemLeftContainer' : 'cvItemRightContainer' }
+              key={ index }
+              initial={ motionProps.initial }
+              whileInView={ motionProps.whileInView }
+              transition={ motionProps.transition }>
+              <CvPortfolioItem content={ item } itemKey={ index } isLeft={ isLeft }/>
+            </motion.div>
           )
-        })}
+        }) }
       </div>
     </div>
   )
