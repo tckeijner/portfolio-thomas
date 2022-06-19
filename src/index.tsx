@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import BioPortfolioPage from "./PortfolioPages/bioPortfolioPage";
 import CvPortfolioPage from "./PortfolioPages/cvPortfolioPage/cvPortfolioPage";
 import ProjectsPortfolioPage from "./PortfolioPages/projectsPortfolioPage";
@@ -15,10 +15,11 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App/>}>
-          <Route path="bio" element={<BioPortfolioPage/>}/>
-          <Route path="cv" element={<CvPortfolioPage/>}/>
-          <Route path="projects" element={<ProjectsPortfolioPage/>}/>
+        <Route path="/" element={ <App/> }>
+          <Route path="" element={ <Navigate to='/cv'/> }/>
+          <Route path="bio" element={ <BioPortfolioPage/> }/>
+          <Route path="cv" element={ <CvPortfolioPage/> }/>
+          <Route path="projects" element={ <ProjectsPortfolioPage/> }/>
         </Route>
       </Routes>
     </BrowserRouter>
