@@ -12,24 +12,26 @@ export default function CvPortfolioPage() {
   }
 
   return (
-    <div className="portFolioPage cvPortfolioPage">
-      <div className="portFolioPageHeader"><h1>CV</h1></div>
+    <div className="portFolioPageContainer">
+      <div className="portFolioPage">
+        <div className="portFolioPageHeader"><h1>CV</h1></div>
 
-      <div className="cvItems">
-        { cvItems.map((item, index) => {
-          const isLeft = index % 2 === 0
-          const motionProps = getMotionProps(isLeft);
-          return (
-            <motion.div
-              className={ isLeft ? 'cvItemLeftContainer' : 'cvItemRightContainer' }
-              key={ index }
-              initial={ motionProps.initial }
-              whileInView={ motionProps.whileInView }
-              transition={ motionProps.transition }>
-              <CvPortfolioItem content={ item } itemKey={ index } isLeft={ isLeft }/>
-            </motion.div>
-          )
-        }) }
+        <div className="cvItems">
+          { cvItems.map((item, index) => {
+            const isLeft = index % 2 === 0
+            const motionProps = getMotionProps(isLeft);
+            return (
+              <motion.div
+                className={ isLeft ? 'cvItemLeftContainer' : 'cvItemRightContainer' }
+                key={ index }
+                initial={ motionProps.initial }
+                whileInView={ motionProps.whileInView }
+                transition={ motionProps.transition }>
+                <CvPortfolioItem content={ item } itemKey={ index } isLeft={ isLeft }/>
+              </motion.div>
+            )
+          }) }
+        </div>
       </div>
     </div>
   )

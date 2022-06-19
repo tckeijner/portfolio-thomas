@@ -1,8 +1,14 @@
 .portFolioPage {
   padding: 13px;
+  max-width: 1000px;
 
   .portFolioPageHeader {
     text-align: center;
   }
 
+}
+
+.portFolioPageContainer {
+  display: flex;
+  justify-content: center;
 }
