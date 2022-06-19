@@ -1,0 +1,40 @@
+@import 'colors';
+
+.cvItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.cvItem {
+  display: flex;
+  align-items: center;
+
+  .cvItemContent {
+    width: 70%;
+  }
+}
+
+.cvItemContent {
+  background-color: $maize-crayola;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.cvItemLeftContainer {
+  width: 90%;
+  align-self: start;
+
+  .cvItem {
+    flex-direction: row;
+  }
+}
+
+.cvItemRightContainer {
+  width: 90%;
+  align-self: end;
+
+  .cvItem {
+    flex-direction: row-reverse;
+  }
+}
