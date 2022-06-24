@@ -1,49 +1,54 @@
 @import 'colors';
 
 .navBar {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: $prussian-blue;
+  overflow: visible;
+  top: 0;
+  background-color: $opal;
   display: flex;
   justify-content: space-between;
 
-  .nameLabel {
+  .leftLabel {
     display: block;
     padding: 14px 16px;
-    color: antiquewhite;
     align-content: center;
     font-size: x-large;
+    color: $prussian-blue;
   }
 
-  .portfolioLabel {
+  .rightLabel {
     display: block;
     padding: 14px 16px;
-    color: antiquewhite;
     align-content: center;
     font-size: x-large;
+    color: $prussian-blue;
   }
 
-  li {
-    display: inline;
+  .navLinks {
+    display: flex;
+    justify-content: space-evenly;
     float: left;
     font-size: x-large;
   }
 
-  li a {
-    display: block;
-    color: $isabelline;
+  .navLink a:hover {
+    background-color: $maximum-blue-green;
+  }
+
+  .navLink a {
+    display: flex;
+    color: $prussian-blue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
 
-  li a:hover {
+  .activeLink {
     background-color: $maximum-blue-green;
   }
 
-  .activeLink {
-    background-color: $maximum-blue-green;
+  .hamburgerMenu {
+
   }
 }
