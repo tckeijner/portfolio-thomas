@@ -20,10 +20,14 @@
       width: 70%;
     }
   }
+
+  .cvItemDate {
+    color: $isabelline
+  }
 }
 
 .cvItemContent {
-  background-color: $maize-crayola;
+  background-color: $opal;
   padding: 20px;
   margin: 10px;
   border-radius: 20px;
