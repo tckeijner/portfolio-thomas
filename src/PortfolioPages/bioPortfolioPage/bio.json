@@ -1,0 +1,17 @@
+[
+  {
+    "src": "/images/photo.png",
+    "bioHeader": "About me",
+    "bioText": "As a former teacher, I know that anything you set your mind to can be learned. With that knowledge I set out to pursue a new dream in IT. It turned out this goal was a lot more suitable for my interests and abilities. After my first years my experience was already quite diverse, having worked as a Front end engineer (Angular, Sitecore), and before that as a Unix Engineer (Red Hat, Chef/Ruby, Bash, Terraform). So far, working in web development suits me very well, but I love solving many problems."
+  },
+  {
+    "src": "/images/tmb.jpeg",
+    "bioHeader": "About me",
+    "bioText": "In me free time I love to seek out the wild. Being out in nature gives me a lot of energy and keeps me healthy. Here you see me during the Tour du Mont Blanc, a multi day hiking tour around the Mont Blanc, crossing from France into Italy, into Switzerland and into France again."
+  },
+  {
+    "src": "/images/music.jpeg",
+    "bioHeader": "About me",
+    "bioText": "As a former music teacher, one of my other great passions is music. Although I am happy I do not practice music professionally anymore, it still helps me relax a lot. Especially making music with friends I met during music college is a great energizer. Here you see me playing and singing during my final concert, which is a curricular exam at the conservatory."
+  }
+]

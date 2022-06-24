@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import BioPortfolioPage from "./PortfolioPages/bioPortfolioPage";
+import BioPortfolioPage from "./PortfolioPages/bioPortfolioPage/bioPortfolioPage";
 import CvPortfolioPage from "./PortfolioPages/cvPortfolioPage/cvPortfolioPage";
 import ProjectsPortfolioPage from "./PortfolioPages/projectsPortfolioPage";
 

@@ -1,0 +1,43 @@
+@import 'portfolioPage';
+
+.bioPageContent {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  .bioPagePhoto {
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 10px;
+    max-width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      width: 30%;
+    }
+  }
+
+  .bioPagePhoto:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .bioPageTextCard {
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 10px;
+  }
+
+  .bioPageTextCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.bioPageContent:nth-of-type(2n) {
+  @media only screen and (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+}
