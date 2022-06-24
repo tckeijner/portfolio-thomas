@@ -14,8 +14,6 @@ export default function CvPortfolioPage() {
   return (
     <div className="portFolioPageContainer">
       <div className="portFolioPage">
-        <div className="portFolioPageHeader"><h1>CV</h1></div>
-
         <div className="cvItems">
           { cvItems.map((item, index) => {
             const isLeft = index % 2 === 0

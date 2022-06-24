@@ -12,6 +12,7 @@ interface CvPortfolioItemProps {
 export default function CvPortfolioItem(props: CvPortfolioItemProps) {
   return (
     <div className="cvItem">
+      <div className="cvItemDate">{ props.content.date }</div>
       <div className="cvItemContent">
         <h1>{ props.content.title }</h1>
         <h2>{ props.content.subtitle }</h2>
@@ -19,7 +20,6 @@ export default function CvPortfolioItem(props: CvPortfolioItemProps) {
           <p key={ index }>{ line }</p>
         )) }
       </div>
-      <div className="cvItemDate">{ props.content.date }</div>
     </div>
   )
 }
